@@ -1,0 +1,494 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Time Travel Dream Sequence Oneshot Part One</title>
+        <style>
+            html {
+    font-size: 15px;
+}
+
+body {
+    width: 87.5%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12.5%;
+    font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    background-color: #fffff8;
+    color: #111;
+    max-width: 1400px;
+    counter-reset: sidenote-counter;
+}
+
+/* Adds dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #151515;
+        color: #ddd;
+    }
+}
+
+h1 {
+    font-weight: 400;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    font-size: 3.2rem;
+    line-height: 1;
+}
+
+h2 {
+    font-style: italic;
+    font-weight: 400;
+    margin-top: 2.1rem;
+    margin-bottom: 1.4rem;
+    font-size: 2.2rem;
+    line-height: 1;
+}
+
+h3 {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.7rem;
+    margin-top: 2rem;
+    margin-bottom: 1.4rem;
+    line-height: 1;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    width: 55%;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+p.subtitle {
+    font-style: italic;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    display: block;
+    line-height: 1;
+}
+
+.numeral {
+    font-family: et-book-roman-old-style;
+}
+
+.danger {
+    color: red;
+}
+
+article {
+    padding: 5rem 0rem;
+}
+
+section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+p,
+dl,
+ol,
+ul {
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+p {
+    margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
+    padding-right: 0;
+    vertical-align: baseline;
+}
+
+/* Chapter Epigraphs */
+div.epigraph {
+    margin: 5em 0;
+}
+
+div.epigraph > blockquote {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+div.epigraph > blockquote,
+div.epigraph > blockquote > p {
+    font-style: italic;
+}
+
+div.epigraph > blockquote > footer {
+    font-style: normal;
+}
+
+div.epigraph > blockquote > footer > cite {
+    font-style: italic;
+}
+/* end chapter epigraphs styles */
+
+blockquote {
+    font-size: 1.4rem;
+}
+
+blockquote p {
+    width: 55%;
+    margin-right: 40px;
+}
+
+blockquote footer {
+    width: 55%;
+    font-size: 1.1rem;
+    text-align: right;
+}
+
+section > p,
+section > footer,
+section > table {
+    width: 55%;
+}
+
+/* 50 + 5 == 55, to be the same width as paragraph */
+section > dl,
+section > ol,
+section > ul {
+    width: 50%;
+    -webkit-padding-start: 5%;
+}
+
+dt:not(:first-child),
+li:not(:first-child) {
+    margin-top: 0.25rem;
+}
+
+figure {
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    max-width: 55%;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    margin: 0 0 3em 0;
+}
+
+figcaption {
+    float: right;
+    clear: right;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    vertical-align: baseline;
+    position: relative;
+    max-width: 40%;
+}
+
+figure.fullwidth figcaption {
+    margin-right: 24%;
+}
+
+/* Links: replicate underline that clears descenders */
+a:link,
+a:visited {
+    color: inherit;
+}
+
+.no-tufte-underline:link {
+    background: unset;
+    text-shadow: unset;
+}
+
+a:link, .tufte-underline, .hover-tufte-underline:hover {
+    text-decoration: none;
+    background: -webkit-linear-gradient(#fffff8, #fffff8), -webkit-linear-gradient(#fffff8, #fffff8), -webkit-linear-gradient(currentColor, currentColor);
+    background: linear-gradient(#fffff8, #fffff8), linear-gradient(#fffff8, #fffff8), linear-gradient(currentColor, currentColor);
+    -webkit-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    -moz-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    text-shadow: 0.03em 0 #fffff8, -0.03em 0 #fffff8, 0 0.03em #fffff8, 0 -0.03em #fffff8, 0.06em 0 #fffff8, -0.06em 0 #fffff8, 0.09em 0 #fffff8, -0.09em 0 #fffff8, 0.12em 0 #fffff8, -0.12em 0 #fffff8, 0.15em 0 #fffff8, -0.15em 0 #fffff8;
+    background-position: 0% 93%, 100% 93%, 0% 93%;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    a:link, .tufte-underline, .hover-tufte-underline:hover {
+        background-position-y: 87%, 87%, 87%;
+    }
+}
+
+/* Adds dark mode */
+@media (prefers-color-scheme: dark) {
+    a:link, .tufte-underline, .hover-tufte-underline:hover {
+        text-shadow: 0.03em 0 #151515, -0.03em 0 #151515, 0 0.03em #151515, 0 -0.03em #151515, 0.06em 0 #151515, -0.06em 0 #151515, 0.09em 0 #151515, -0.09em 0 #151515, 0.12em 0 #151515, -0.12em 0 #151515, 0.15em 0 #151515, -0.15em 0 #151515;
+    }
+}
+
+a:link::selection,
+a:link::-moz-selection {
+    text-shadow: 0.03em 0 #b4d5fe, -0.03em 0 #b4d5fe, 0 0.03em #b4d5fe, 0 -0.03em #b4d5fe, 0.06em 0 #b4d5fe, -0.06em 0 #b4d5fe, 0.09em 0 #b4d5fe, -0.09em 0 #b4d5fe, 0.12em 0 #b4d5fe, -0.12em 0 #b4d5fe, 0.15em 0 #b4d5fe, -0.15em 0 #b4d5fe;
+    background: #b4d5fe;
+}
+
+/* Sidenotes, margin notes, figures, captions */
+img {
+    max-width: 100%;
+}
+
+.sidenote,
+.marginnote {
+    float: right;
+    clear: right;
+    margin-right: -60%;
+    width: 50%;
+    margin-top: 0.3rem;
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    line-height: 1.3;
+    vertical-align: baseline;
+    position: relative;
+}
+
+.sidenote-number {
+    counter-increment: sidenote-counter;
+}
+
+.sidenote-number:after,
+.sidenote:before {
+    font-family: et-book-roman-old-style;
+    position: relative;
+    vertical-align: baseline;
+}
+
+.sidenote-number:after {
+    content: counter(sidenote-counter);
+    font-size: 1rem;
+    top: -0.5rem;
+    left: 0.1rem;
+}
+
+.sidenote:before {
+    content: counter(sidenote-counter) " ";
+    font-size: 1rem;
+    top: -0.5rem;
+}
+
+blockquote .sidenote,
+blockquote .marginnote {
+    margin-right: -82%;
+    min-width: 59%;
+    text-align: left;
+}
+
+div.fullwidth,
+table.fullwidth {
+    width: 100%;
+}
+
+div.table-wrapper {
+    overflow-x: auto;
+    font-family: "Trebuchet MS", "Gill Sans", "Gill Sans MT", sans-serif;
+}
+
+.sans {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    letter-spacing: .03em;
+}
+
+code, pre > code {
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 1.0rem;
+    line-height: 1.42;
+    -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS. See https://github.com/edwardtufte/tufte-css/issues/81#issuecomment-261953409 */
+}
+
+.sans > code {
+    font-size: 1.2rem;
+}
+
+h1 > code,
+h2 > code,
+h3 > code {
+    font-size: 0.80em;
+}
+
+.marginnote > code,
+.sidenote > code {
+    font-size: 1rem;
+}
+
+pre > code {
+    font-size: 0.9rem;
+    width: 52.5%;
+    margin-left: 2.5%;
+    overflow-x: auto;
+    display: block;
+}
+
+pre.fullwidth > code {
+    width: 90%;
+}
+
+.fullwidth {
+    max-width: 90%;
+    clear:both;
+}
+
+span.newthought {
+    font-variant: small-caps;
+    font-size: 1.2em;
+}
+
+input.margin-toggle {
+    display: none;
+}
+
+label.sidenote-number {
+    display: inline-block;
+    max-height: 2rem; /* should be less than or equal to paragraph line-height */
+}
+
+label.margin-toggle:not(.sidenote-number) {
+    display: none;
+}
+
+.iframe-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+
+.iframe-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 760px) {
+    body {
+        width: 84%;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    hr,
+    section > p,
+    section > footer,
+    section > table {
+        width: 100%;
+    }
+
+    pre > code {
+        width: 97%;
+    }
+
+    section > dl,
+    section > ol,
+    section > ul {
+        width: 90%;
+    }
+
+    figure {
+        max-width: 90%;
+    }
+
+    figcaption,
+    figure.fullwidth figcaption {
+        margin-right: 0%;
+        max-width: none;
+    }
+
+    blockquote {
+        margin-left: 1.5em;
+        margin-right: 0em;
+    }
+
+    blockquote p,
+    blockquote footer {
+        width: 100%;
+    }
+
+    label.margin-toggle:not(.sidenote-number) {
+        display: inline;
+    }
+
+    .sidenote,
+    .marginnote {
+        display: none;
+    }
+
+    .margin-toggle:checked + .sidenote,
+    .margin-toggle:checked + .marginnote {
+        display: block;
+        float: left;
+        left: 1rem;
+        clear: both;
+        width: 95%;
+        margin: 1rem 2.5%;
+        vertical-align: baseline;
+        position: relative;
+    }
+
+    label {
+        cursor: pointer;
+    }
+
+    div.table-wrapper,
+    table {
+        width: 85%;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+        </style>
+    </head>
+    <body>
+        <article>
+            <h1>Time Travel Dream Sequence Oneshot Part One</h1>
+            <p class="subtitle">I will do the notes a normal way too</p>
+            <section>
+                <h2>Setting & Location</h2>
+                <h3>Vascun</h3>
+                <p>A small nation, located in what would at various later points in time become Vaerland, and then Pinna. Fairly forested and mountainous, and known primarily to people in Alec and Hayden's time through historical documents and archaeological sites, in a fairly obscure and unremarkable way. Not the center of a huge empire or anything like that.</p>
+                <h3>The town of Eiestel</h3>
+                <p>A settlement in Vascun, and one of the better preserved aforementioned archaeological sites in Vaerland. A fairly small town, mainly notable in the region for its proximity to the next two things on this list.</p>
+                <h3>First Sunrise Holy Forge</h3>
+                <p>A high end arms and armour workshop, owned and operated by a mother-daughter tiefling forge cleric duo who moved here from the City of Vindictierre.</p>
+                <h3>Our Lady's Radiance Encircles The Horizon</h3>
+                <p>Locally colloquially just called "Horizon Temple", and found up one of the several mountains in the area in the place that would one day be the temple of Torm. Known for its pretty militaristic and intense training of paladins which generally takes a candidate around a decade to complete and most commonly begins in childhood, although they do also run a sort of Paladin Community College Summer School program where paladins of other deities and from other countries come to learn the specific sword-and-board defense-heavy melee combat techniques that paladins from Horizon Temple are known for.</p>
+            </section>
+            <section>
+                <h2>Characters</h2>
+                <h3>Forgemaiden Clarity</h3>
+                <p>A young tiefling woman, in her very early 20s, who is the daughter of the mother-daughter combo that runs First Sunrise. Average height, with the sort of muscular build you would entirely expect from a professional blacksmith. She has dark violet / indigo skin, black hair which is probably pretty long but you've only seen it tied back in a bun (which also makes sense for a blacksmith), and a single pair of curling ram's horns. The whites of her eyes are a bright, intense blue, her silvery-grey pupils are horizontal and almost rectangular, like a goat's, and she has no visibly perceptible irises.</p>
+                <p>Clarity has, apparently, recently properly qualified as a fully fledged Forgemaiden (1st Degree), and she specialises in bespoke swords, daggers, and other bladed weapons. She is romantically involved with one of the paladins resident at Horizon Temple, and has asked for the party's help dealing with some kind of mysterious dispute at one of the mines First Sunrise sources materials from.</p>
+                <h3>Rinkin</h3>
+                <p>A baby blue kobold (as in the colour, she is not baby any more than every kobold is baby) who works for Clarity as "Vice President of Vendor Relations & Mineral Assay", and is the primary point of contact between First Sunrise and the various kobold mining operations they get metal and gemstones from. As part of the help Clarity has asked the party for, she will be accompanying you, but wont be able to help you much in any sort of combat situation.</p>
+                <p>Very good at making lists and stuff, like a little draconic excel spreadsheet.</p>
+                <h3>Brother Dairmid / Sir Dairmid Gail</h3>
+                <p>A high ranking paladin, and instructor at Horizon Temple. Human, mid-to-late 40s, short but dense and lowkey jacked. Missing his left arm at the shoulder, and walks with a crutch because of some manner of permanent injury to his left leg. Shaven head, dark brown handlebar moustache combined with a general facial stubble, similarly dark brown eyes, and constellation / star map tattoos very similar to Thane's which extend over at least his right shoulder, neck, and scalp.</p>
+                <p>A pretty blunt and forthright guy, sort of precisely what you might expect of a very disciplined veteran paladin. Despite his injuries, you get the distinct impression he could still kick your ass in a fight.</p>
+                <h3>Acolyte Vascun / Fionn Vascun / Finnian Gascgoine</h3>
+                <p>You've met force ghost alec guinness ben kenobi Finnian, and now here is phantom menace ewan macgregor obi wan finnian. Half-elf, very early 20s, shaven head like the rest of the paladins and paladin-candidates at Horizon Temple rock, and a "bless his heart he is trying his best" patchy ginger beard.</p>
+                <p>You haven't had the chance to talk to him much, but you know he is a couple of weeks away from his formal Paladin Graduation Ceremony, and that he and Clarity are dating.</p>
+                <h3>Brother Ruaridh & Sister Siobhan</h3>
+                <p>A pair of clerics at Horizon Temple who at least sometimes work in the kitchen there, though you assume there is some kind of rota system. They seem nice, and they make a mean breakfast.</p>
+            </section>
+            <section>
+                <h2>Plot Hooks</h2>
+                <h3>Figure Out What The Fuck Is Going On</h3>
+                <p>How exactly the hell did you get here? Is this even real, or did you all take massive bong rips of Rahona's dank weed again and you are just having a shared hallucination? Why is Starlight a rabbit now?</p>
+                <p>Brother Dairmid has suggested that you might be able to get help answering these questions if you head a ways further up the mountain from the temple, and go talk to an aarakocra who lives alone in a little cabin up there, who he referred to as "the soothsayer" and "an academic type, you could say", which hopefully Hayden will have recovered from his headache in time to have a rigorous wizardly discussion with.</p>
+                <h3>Help Clarity</h3>
+                <p>There is some kind of mysterious problem at one of the kobold mines which First Sunrise gets material from: the miners have turned cagey, secretive, and hostile towards outsiders. Rinkin was nearly attacked the last time she went there to try and negotiate, and something is definitely not right with the whole situation, something has happened to these kobolds which is of fairly serious concern to Clarity. Especially since it is the one place where she can acquire a specific but as yet unknown to the party material which she urgently needs in order to make Fionn a graduation gift.</p>
+            </section>
+        </article>
+    </body>
+</html>
